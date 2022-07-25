@@ -1,0 +1,117 @@
+.serverbar {
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  h4 {
+    font-size: 30px;
+    padding: 0 10px;
+    @include md {
+      font-size: 35px;
+    }
+    @include lg {
+      font-size: 40px;
+    }
+  }
+  span {
+    padding: 0 20px;
+    font-size: 24px;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    input[type="text"] {
+      height: 28px;
+      margin-right: 10px;
+      @include md {
+        height: 32px;
+        width: auto;
+        padding: 0 100px 0 10px;
+      }
+      @include lg {
+        height: 40px;
+      }
+    }
+    button {
+      // height: 100%;
+      font-size: 20px;
+    }
+  }
+}
+.filter {
+  justify-content: center;
+  margin-top: 5px;
+  padding-bottom: 30px;
+  .filter_btn {
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-inline: 20px;
+  }
+  .active {
+    background-color: purple;
+    border-color: purple;
+  }
+}
+
+section {
+  // padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div > input {
+    outline: none;
+    caret-color: transparent;
+  }
+  p {
+    width: 100%;
+    padding: 5px 10px 5px 20px;
+    // text-align: center;
+  }
+  .TodoList {
+    padding: 10px 0;
+    width: 60%;
+    @include lg {
+      width: 50%;
+    }
+    position: relative;
+    align-items: center;
+    i:not(last-of-type) {
+      padding-right: 10px;
+    }
+    transition: all 0.2s ease;
+    .fa-check {
+      cursor: pointer;
+      border: 1px solid white;
+      padding: 3px;
+      margin-right: 10px;
+    }
+  }
+  .icon_right {
+    position: absolute;
+    right: 0;
+    button > i {
+      font-size: 16px;
+    }
+  }
+}
+
+.isntdone {
+  .fa-check {
+    color: green;
+  }
+  input {
+    font-style: oblique;
+    color: green;
+  }
+}
+.done {
+  opacity: 0.5;
+  .fa-check {
+    color: gray;
+  }
+  p {
+    text-decoration: line-through 3px;
+    color: gray;
+  }
+}

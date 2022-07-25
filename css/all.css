@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+body {
+  height: 100vh;
+}
+
+input:disabled,
+input[disabled] {
+  opacity: 1;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn i {
+  pointer-events: none;
+}
+
+.serverbar {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.serverbar h4 {
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .serverbar h4 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .serverbar h4 {
+    font-size: 40px;
+  }
+}
+
+.serverbar span {
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+.serverbar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.serverbar form input[type="text"] {
+  height: 28px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .serverbar form input[type="text"] {
+    height: 32px;
+    width: auto;
+    padding: 0 100px 0 10px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .serverbar form input[type="text"] {
+    height: 40px;
+  }
+}
+
+.serverbar form button {
+  font-size: 20px;
+}
+
+.filter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  padding-bottom: 30px;
+}
+
+.filter .filter_btn {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-inline: 20px;
+}
+
+.filter .active {
+  background-color: purple;
+  border-color: purple;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section div > input {
+  outline: none;
+  caret-color: transparent;
+}
+
+section p {
+  width: 100%;
+  padding: 5px 10px 5px 20px;
+}
+
+section .TodoList {
+  padding: 10px 0;
+  width: 60%;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+@media (min-width: 1366px) {
+  section .TodoList {
+    width: 50%;
+  }
+}
+
+section .TodoList i:not(last-of-type) {
+  padding-right: 10px;
+}
+
+section .TodoList .fa-check {
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 3px;
+  margin-right: 10px;
+}
+
+section .icon_right {
+  position: absolute;
+  right: 0;
+}
+
+section .icon_right button > i {
+  font-size: 16px;
+}
+
+.isntdone .fa-check {
+  color: green;
+}
+
+.isntdone input {
+  font-style: oblique;
+  color: green;
+}
+
+.done {
+  opacity: 0.5;
+}
+
+.done .fa-check {
+  color: gray;
+}
+
+.done p {
+  -webkit-text-decoration: line-through 3px;
+          text-decoration: line-through 3px;
+  color: gray;
+}
+/*# sourceMappingURL=all.css.map */
