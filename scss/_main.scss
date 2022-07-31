@@ -69,6 +69,7 @@ section {
     // text-align: center;
   }
   .TodoList {
+    justify-content: center;
     padding: 10px 0;
     width: 60%;
     @include lg {

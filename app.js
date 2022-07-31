@@ -21,7 +21,7 @@ add.addEventListener("click", (e) => {
   // 產生list內容在下方section
   let newTodo = document.createElement("div");
   newTodo.className = "d-flex TodoList isntdone";
-  newTodo.style.animation = "scaleUp 0.3s forwards";
+  // newTodo.style.animation = "scaleUp 0.3s forwards";
   refresh();
 
   let complete_icon = document.createElement("i");

@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>To-Do List</title>
   </head>
   <body>
@@ -24,16 +35,17 @@
         </form>
       </div>
       <div class="filter d-flex">
-        <a class="btn filter_btn filter-* active">All</a>
-        <a class="btn filter_btn filter-todo"> ToDo</a>
-        <a class="btn filter_btn filter-completed">Completed</a>
+        <a class="btn filter_btn all filter-* active">All</a>
+        <a class="btn filter_btn todo filter-todo"> ToDo</a>
+        <a class="btn filter_btn complete filter-completed">Completed</a>
       </div>
-      <section></section>
+      <section id="section"></section>
     </div>
   </body>
   <script
     src="https://kit.fontawesome.com/f524eb7c1c.js"
     crossorigin="anonymous"
   ></script>
-  <script src="./app.js"></script>
+  <script src="./app1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </html>
